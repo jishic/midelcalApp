@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    <mapper namespace="com.bcgm.dao.JiJiuMapper">
+    
+      <select id="getAllill"  resultType="jijiu">
+         select *from illness_aid 
+     </select>
+      
+      <select id="getTitleill" parameterType="String" resultType="jijiu">
+         select *from illness_aid where id>=0
+         <if test="title!=null and title!=''">
+           and title LIKE  '%${title}%'
+         </if>
+     </select>
+    
+     <select id="getAllskill"  resultType="jijiu">
+         select *from skill_aid 
+     </select>
+      
+      <select id="getTitleskill" parameterType="String" resultType="jijiu">
+         select *from skill_aid where id>=0
+         <if test="title!=null and title!=''">
+           and title LIKE   CONCAT(CONCAT('%', #{title}), '%')
+         </if>
+     </select>
+    </mapper>

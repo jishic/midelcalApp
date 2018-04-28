@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+  <context id="DB2Tables" targetRuntime="MyBatis3">
+  
+  <commentGenerator>
+  <property name="suppressAllComments" value="true"/>
+  </commentGenerator>
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+        connectionURL="jdbc:mysql://localhost:3306/bcgm"
+        userId="root"
+        password="123456">
+    </jdbcConnection>
+
+    <javaTypeResolver >
+      <property name="forceBigDecimals" value="false" />
+    </javaTypeResolver>
+
+    <javaModelGenerator targetPackage="com.bcgm.bean" targetProject=".\src\main\java">
+      <property name="enableSubPackages" value="true" />
+      <property name="trimStrings" value="true" />
+    </javaModelGenerator>
+
+    <sqlMapGenerator targetPackage="mapper"  targetProject=".\src\main\resources">
+      <property name="enableSubPackages" value="true" />
+    </sqlMapGenerator>
+
+    <javaClientGenerator type="XMLMAPPER" targetPackage="com.bcgm.dao"  targetProject=".\src\main\java">
+      <property name="enableSubPackages" value="true" />
+    </javaClientGenerator>
+
+    <table tableName="meditable" domainObjectName="Meditable" >
+    </table>
+	<table tableName="Disease" domainObjectName="Disease" >
+    </table>
+    <table tableName="skill_aid" domainObjectName="SkillAid"></table>
+  	<table tableName="heartrate_test" domainObjectName="HeartrateTest" >
+    </table>
+    <table tableName="bloodsuger_test" domainObjectName="BloodsugerTest" >
+    </table>
+    <table tableName="bloodpressure_test" domainObjectName="BloodpressureTest" >
+    </table>
+    <table tableName="bloodfat_test" domainObjectName="BloodfatTest" >
+    </table>
+    <table tableName="height_weight" domainObjectName="HeightWeight" >
+    </table>
+    <table tableName="step_count" domainObjectName="StepCount" >
+    </table>
+    <table tableName="suggest_heartrate" domainObjectName="SuggestHeartrate" >
+    </table>
+    <table tableName="suggest_bloodsuger" domainObjectName="SuggestBloodsuger" >
+    </table>
+    <table tableName="suggest_bloodpressure" domainObjectName="SuggestBloodpressure" >
+    </table>
+     <table tableName="suggest_bloodfat" domainObjectName="SuggestBloodfat" >
+    </table>
+    
+     <table tableName="suggest_hweight" domainObjectName="SuggestHweight" >
+    </table>
+    
+    <table tableName="Healthcare_module" domainObjectName="HealthcareModule" >
+    </table>
+    
+    <table tableName="Healthcare_article" domainObjectName="HealthcareArticle" >
+    </table>
+  
+  </context>
+</generatorConfiguration>

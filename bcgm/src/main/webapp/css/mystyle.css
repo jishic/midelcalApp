@@ -1,0 +1,56 @@
+.top{
+	height: 10%;
+	width:100%;
+	background:#000; 
+	color:#FFF;
+}
+.top_back{
+	float: left;
+	width: 50%;
+	height: 100%;	
+	background:#000; 
+	color:#FFF;
+}
+.top_title{
+	float: left;
+	background:#000; 
+	color:#FFF;
+	width: 50%;
+	height: 100%
+}
+.clear{
+	clear: both;
+}
+.bottom{
+	height: 90%;
+	width: 100%;
+	border:0;
+	padding:0;
+}
+.bingli{
+	float: left;
+	width: 60%;
+	position:relative;
+	top: 0;
+	}
+.bottom_right{
+	float: left;
+	width: 40%;
+}
+.clear1{
+	clear: both;
+}
+
+.topOfBingli{
+	height:33%; 
+	background:red;
+}
+.navOfBingli{
+	height:33%;
+	background:blue;
+
+	}/* 这里的height怎样才能自适应*/
+.bottomOfBingli{
+	height:33%;
+	background:gray;
+}

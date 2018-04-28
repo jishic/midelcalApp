@@ -1,0 +1,62 @@
+ body{
+	background-color: #03a3fb;
+}
+
+.logo{
+	margin: 6% auto;
+
+	text-align: center;
+}
+.querytext{
+	margin-top: -5%;
+	margin-left: auto;
+	margin-right: auto;
+	/*border: 1px solid;*/
+
+}
+.queryframe{
+	margin-left: auto;
+	width: 50%;
+	height: 40px;
+	font-size: 23px;
+	color: #999999;
+	float:left;
+	margin-left: 20%;
+}
+.querybtn{
+	height: 40px;
+	width: 10%;
+	border-radius: 0px;
+	font-size: 23px;
+	background-color: #333333;
+	color: #f7f3f7;
+	float:left;
+	line-height: 100%;
+}
+.querybtn:hover{
+	color: #ffffff;
+}
+.querybtn:focus{
+	color: #ffffff;
+}
+
+/*下面三个格子*/
+.sorts{
+	margin-top: 5%;
+}
+
+.sort{
+	height: 20%;
+	/*background-color: #343d46;*/
+	/*color:white;*/
+}
+.sortContent{
+	font-size: 15px;
+
+}
+
+.sort p{
+	color: white;
+}
+
+

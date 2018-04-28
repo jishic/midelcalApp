@@ -1,0 +1,45 @@
+.c1{
+	background-color: #333333;
+	margin-left:0;
+	margin-right:0; 
+	width: 100%;
+}
+.b1{
+	margin-top:20px;
+	float: left;
+	margin-left:7%; 
+}
+.title{
+	color: white;
+	float: left;
+	text-align: center;
+	margin-left: 33%;
+} 
+body{
+	background-color: #e5e5e5;
+}
+.linedate{
+	background-color: white;
+	border:solid;
+	border-radius: 10px;
+	border-width: 80%;
+	font-size: 30px;
+	border-color: transparent;
+	margin-top: 10px;
+	padding-left: 15%;
+}
+.b2{
+	position: relative;
+	left:40%;
+}
+.r2{
+	margin-top: 1%;
+	margin-left: 2%;
+}
+.pict{
+	width:130%;
+	height:190%;
+}
+.f{
+	margin-top: 2%;
+}

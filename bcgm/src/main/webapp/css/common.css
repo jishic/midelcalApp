@@ -1,0 +1,53 @@
+@CHARSET "UTF-8";
+a{
+    text-decoration:none;
+}
+
+body{
+
+}
+.container{
+
+}
+
+a {
+	/* text-decoration: none; */
+}
+
+.checkboxCss{
+    zoom:180%;
+}
+.labelCss
+{
+	font-size: 220%; 
+	font-weight: 800;
+}
+
+area:hover{
+	pointer;
+	border: 1px solid red;
+}
+
+table tbody td button:hover{
+	cursor:pointer;
+	background: -webkit-linear-gradient(#00CACA, #00E3E3);
+	background: -o-linear-gradient(#00CACA, #00E3E3);
+	background: -moz-linear-gradient(#00CACA, #00E3E3);
+	background: linear-gradient(#00CACA, #00E3E3);
+}
+
+table thead td{
+    background: -webkit-linear-gradient(#00AEAE, #00CACA);
+	background: -o-linear-gradient(#00AEAE, #00CACA);
+	background: -moz-linear-gradient(#00AEAE, #00CACA);
+	background: linear-gradient(#00AEAE, #00CACA);
+}
+
+button {
+	border: none;
+}
+
+table.table-fixed-head .table-fixed-head-thead {
+	border-bottom: 1px solid #dddddd;
+	background: #fff;
+}

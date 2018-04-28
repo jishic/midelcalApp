@@ -1,0 +1,21 @@
+.header{
+	background-color: #333333;
+	height: 70px;
+	padding-top: 20px;
+	text-align: center;
+}
+.headertext{
+	color: white;
+	font-size: 20px;
+}
+.hrefline{
+font-size: 20px;
+text-align: none;
+}
+.r1{
+	margin-top: 5%;
+}
+.area{
+	border-style: hidden;
+	font-size: 20px;
+}

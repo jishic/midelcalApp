@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bcgm.dao.DiseaseMapper">
+	<!-- 通过疾病部位和性别查询到该部位所有的疾病 -->
+	<select id="selectBy" parameterType="String" resultType = "Disease">
+		select * from DiseasesDiagnosisQuery where loc_gtd_id=#{0};
+	</select>
+
+	<!-- 通过疾病名称查询疾病 -->
+	<select id="selectByDseaseName" parameterType="String" resultType="Disease">
+		select * from DiseasesDiagnosisQuery where ddq_name=#{diseaseName};
+	</select>
+
+	<!-- 通过疾病名称模糊查询疾病 -->
+	<select id="blurSelectByDseaseName" parameterType="String" resultType="Disease">
+		select * from DiseasesDiagnosisQuery where ddq_name LIKE CONCAT(CONCAT('%',#{blurName}),'%');
+	</select>
+</mapper>

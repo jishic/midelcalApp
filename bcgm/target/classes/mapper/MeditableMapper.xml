@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bcgm.dao.MeditableMapper">
+  <resultMap id="BaseResultMap" type="com.bcgm.bean.Meditable">
+    <id column="medicine" jdbcType="VARCHAR" property="medicine" />
+    <result column="category" jdbcType="VARCHAR" property="category" />
+    <result column="function" jdbcType="VARCHAR" property="function" />
+    <result column="adaptation" jdbcType="VARCHAR" property="adaptation" />
+    <result column="ingrement" jdbcType="VARCHAR" property="ingrement" />
+    <result column="dosage" jdbcType="VARCHAR" property="dosage" />
+    <result column="sideeffect" jdbcType="VARCHAR" property="sideeffect" />
+    <result column="taboo" jdbcType="VARCHAR" property="taboo" />
+    <result column="attention" jdbcType="VARCHAR" property="attention" />
+  </resultMap>
+
+  <sql id="Base_Column_List">
+    medicine, category, function, adaptation, ingrement, dosage, sideeffect, taboo, attention
+  </sql>
+  <select id="selectByExample" parameterType = "java.lang.String" resultMap="BaseResultMap">
+  	select
+  	 <include refid="Base_Column_List" />
+  	 from meditable
+  	 where category = #{category,jdbcType=VARCHAR}
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from meditable
+    where medicine = #{medicine,jdbcType=VARCHAR}
+  </select>
+  <select id="selectBycategory"  resultType="java.lang.String">
+  select category
+  from meditable group by category
+  </select>
+</mapper>

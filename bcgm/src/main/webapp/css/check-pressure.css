@@ -1,0 +1,30 @@
+/*顶栏*/
+.header{
+	background-color: #333333;
+	height: 70px;
+	padding-top: 20px;
+	text-align: center;
+}
+.hrefline{
+font-size: 20px;
+text-align: none;
+}
+.headertext{
+	color: white;
+	font-size: 20px;
+}
+
+/*第二行*/
+.r2{
+	margin-top: 40px;
+}
+.b1{
+	
+	/*background-image: url("../img/check-pressure/button.png");*/
+	border:none;
+	border-style: round;
+
+}
+.area{
+	font-size: 20px;
+}
